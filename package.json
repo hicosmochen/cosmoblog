@@ -1,0 +1,16 @@
+{
+  "name": "cosmoblog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev docs",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress build docs",
+    "build&remove": "vuepress build docs && node extrascripts/rm.js"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.1.0",
+    "vuepress": "^1.9.7",
+    "vuepress-plugin-table-of-contents": "^1.1.7"
+  }
+}
